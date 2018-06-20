@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	font-family: Gillsans, Arial, Helvetica, sans-serif;
+	color: #f3f3f3;
+	background: #f3f3f3;
+	overflow: hidden;
+}
+
+.landing {
+	position: relative;
+	background-image: url("../img/background.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.landing-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	padding-top: 50px;
+}
+
+.landing h1 {
+	font-size: 60px;
+	margin-top: 0;
+}
+.landing p {
+	font-size: 20px;
+	margin: 0;
+}
+.countDown {
+	width: max-content;
+	margin: auto;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+.countDown div:first-child {
+	color: #ffb6c1;
+}
+.countDown div {
+	padding: 15px;
+
+	/*margin: 5px;*/
+}
+.countDown span {
+	display: block;
+	font-size: 18px;
+}
+.comingSoon {
+	margin-bottom: 40px;
+}
+
+@media (max-width: 650px) {
+	.landing img {
+		width: 50%;
+	}
+	.landing h1 {
+		font-size: 40px;
+	}
+	.countDown {
+		flex-direction: column;
+	}
+}
+
+@media (max-height: 600px) {
+	.landing img {
+		width: 10%;
+	}
+	.landing h1 {
+		font-size: 40px;
+	}
+	.countDown {
+		flex-direction: initial;
+	}
+}
+
